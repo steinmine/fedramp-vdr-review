@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FedRAMP VDR/VER — PAIN Scoring Method, VLEV &amp; VEX Proposals</title>
+<meta name="description" content="A deterministic, standards-grounded method for prioritizing vulnerabilities under FedRAMP Rev5 VDR/VER, plus companion proposals: a VLEV exploitability gradation and a CycloneDX VEX disposition profile.">
+<style>
+  :root{
+    --ink:#11181c; --muted:#5b6770; --line:#e3e8ec; --bg:#f7f9fb;
+    --accent:#0b5fff; --accent-ink:#08308a; --card:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; color:var(--ink); background:var(--bg);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:880px; margin:0 auto; padding:0 20px}
+  header{
+    background:linear-gradient(180deg,#0b1f3a,#0b2c57); color:#fff;
+    padding:56px 0 44px; border-bottom:4px solid var(--accent);
+  }
+  header .wrap{text-align:left}
+  .eyebrow{font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:#9fc0ff; margin:0 0 10px}
+  h1{font-size:30px; line-height:1.25; margin:0 0 14px; font-weight:700}
+  .lede{font-size:17px; color:#d7e3f5; margin:0; max-width:60ch}
+  .author{margin-top:18px; font-size:14px; color:#aebfd6}
+  .author a{color:#cfe0ff}
+  main{padding:40px 0 60px}
+  h2{font-size:14px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:36px 0 14px}
+  .cards{display:grid; gap:16px}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:20px 22px; box-shadow:0 1px 2px rgba(16,24,40,.04);
+  }
+  .card h3{margin:0 0 6px; font-size:18px}
+  .card .sub{color:var(--muted); font-size:14px; margin:0 0 14px}
+  .card.featured{
+    border-color:var(--accent); border-width:2px; padding:26px 26px;
+    box-shadow:0 6px 20px rgba(11,95,255,.13);
+    background:linear-gradient(180deg,#ffffff,#f4f8ff);
+  }
+  .card.featured h3{font-size:24px; margin-top:4px}
+  .card.featured .sub{color:#2a3942; font-size:15px}
+  .badge{
+    display:inline-block; font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+    font-weight:700; color:#fff; background:var(--accent); padding:3px 10px; border-radius:999px;
+  }
+  .actions{display:flex; gap:10px; flex-wrap:wrap}
+  .btn{
+    display:inline-block; text-decoration:none; font-size:14px; font-weight:600;
+    padding:8px 14px; border-radius:8px; border:1px solid var(--accent);
+  }
+  .btn.primary{background:var(--accent); color:#fff}
+  .btn.ghost{background:#fff; color:var(--accent-ink)}
+  .btn:hover{filter:brightness(1.05)}
+  .note{font-size:13px; color:var(--muted)}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--muted); font-size:13px}
+  footer a{color:var(--accent-ink)}
+  a{color:var(--accent-ink)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">FedRAMP Rev5 · Vulnerability Detection &amp; Response</p>
+    <h1>A Deterministic, CVSS-Environmental Method for FedRAMP Rev5 VDR/VER Vulnerability Prioritization</h1>
+    <p class="lede">This page links to the primary PDF in this repo: the FedRAMP VDR/VER review and scoring methodology overview.</p>
+    <p class="author">Generated for <strong>fedramp-vdr-review</strong></p>
+  </div>
+</header>
+<main class="wrap">
+  <h2>Primary document</h2>
+  <div class="cards">
+    <div class="card featured">
+      <span class="badge">Primary document</span>
+      <h3>VDR Math Overview</h3>
+      <p class="sub">A grounded method for prioritizing vulnerabilities under FedRAMP Rev5 VDR/VER, with companion proposals to refine exploitability and carry disposition as VEX.</p>
+      <div class="actions">
+        <a class="btn primary" href="vdr-math-overview.pdf">View PDF</a>
+        <a class="btn ghost" href="vdr-math-overview.pdf" download>Download</a>
+      </div>
+      <p class="secondary-link">Open the PDF directly from your browser or download it for offline review.</p>
+    </div>
+  </div>
+</main>
+<footer class="wrap">
+  <p>Source: <a href="../README.md">README</a> · Informational content for FedRAMP vulnerability prioritization review.</p>
+</footer>
+</body>
+</html>
